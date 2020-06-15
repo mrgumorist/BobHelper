@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasualHub.UI", "CasualHub\CasualHub.UI.csproj", "{98164851-E706-44A6-9310-B1DC0AE5ACC0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasualHub.DAL", "CasualHub.DAL\CasualHub.DAL.csproj", "{D5EF924A-991E-4E16-852D-D4C073695A18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98164851-E706-44A6-9310-B1DC0AE5ACC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98164851-E706-44A6-9310-B1DC0AE5ACC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98164851-E706-44A6-9310-B1DC0AE5ACC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98164851-E706-44A6-9310-B1DC0AE5ACC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5EF924A-991E-4E16-852D-D4C073695A18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5EF924A-991E-4E16-852D-D4C073695A18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5EF924A-991E-4E16-852D-D4C073695A18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5EF924A-991E-4E16-852D-D4C073695A18}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7EA39B43-659A-483F-A7E0-135E8C4354BD}
+	EndGlobalSection
+EndGlobal
