@@ -82,6 +82,7 @@ namespace CasualHub
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
+            app.UseCors(builder => builder.AllowAnyOrigin());
             app.UseRouting();
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
