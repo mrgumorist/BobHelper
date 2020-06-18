@@ -36,7 +36,9 @@ namespace CasualHub
          
             services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DbConnection")));
-
+            services.AddMvc().AddJsonOptions(options => {
+                options.JsonSerializerOptions.MaxDepth = 43300;  // or however deep you need
+            });
             services.AddIdentity<IdentityUser, IdentityRole>(x => { x.Password.RequiredLength = 6; x.Password.RequireUppercase = false; x.Password.RequireLowercase = false; x.Password.RequireNonAlphanumeric = false; x.User.RequireUniqueEmail = true; })
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
@@ -82,7 +84,7 @@ namespace CasualHub
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
-            app.UseCors(builder => builder.AllowAnyOrigin());
+            app.UseCors(options=>options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             app.UseRouting();
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>

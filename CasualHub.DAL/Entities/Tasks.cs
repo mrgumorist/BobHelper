@@ -15,8 +15,9 @@ namespace CasualHub.DAL.Entities
         public string Name { get; set; }
         public string Description { get; set; }
         public DateTime date { get; set; }
-        public string Category { get; set; }
+        public virtual Category Category { get; set; }
+        public int CategoryID { get; set; }
         public bool IsComplited { get; set; } = false;
-        public virtual IdentityUser ApplicationUser { get; set; }
+        public string ApplicationUserId { get; set; }
     }
 }

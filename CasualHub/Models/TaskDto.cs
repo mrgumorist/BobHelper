@@ -4,12 +4,14 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace CasualHub.UI.Models
 {
     public class TaskDto
     {
+     
         public int ID { get; set; }
         [Required(ErrorMessage = "Name is required")]
         public string Name { get; set; }
@@ -22,6 +24,6 @@ namespace CasualHub.UI.Models
         public string Category { get; set; }
         [Required(ErrorMessage = "IsComplited is required")]
         public bool IsComplited { get; set; }
-        public virtual IdentityUser ApplicationUser { get; set; }
+        public string ApplicationUserId { get; set; }
     }
 }
